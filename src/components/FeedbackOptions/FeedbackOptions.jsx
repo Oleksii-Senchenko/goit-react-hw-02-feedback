@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+
+import './FeedbackOptions.module.css'
 class FeedbackOptions extends Component {
   render() {
     const { goodFeedBack, neutralFeedBack, badFeedBack } = this.props;
