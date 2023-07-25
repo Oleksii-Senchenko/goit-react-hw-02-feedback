@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Section.module.css'
+
 class Section extends Component {
   render() {
     const { title, children } = this.props;
