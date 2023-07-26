@@ -9,23 +9,20 @@ export class Statistics extends Component {
       <div className={css.mainFeedback}>
 
 
-        <ul>
-          <li>
+        
             <p>
               Good: <span>{good}</span>
             </p>
-          </li>
-          <li>
+         
+          
             <p>
               Neutral: <span>{neutral}</span>
             </p>
-          </li>
-          <li>
+         
             <p>
               Bad: <span>{bad}</span>
             </p>
-          </li>
-          <li>
+         
             <p>
               Total Feedback: <span> {total}</span>
             </p>
@@ -33,8 +30,7 @@ export class Statistics extends Component {
               Positive Feedback Percentage:
               <span> {positivePercentage}%</span>
             </p>
-          </li>
-        </ul>
+          
       </div>
     );
   }

@@ -32,19 +32,14 @@ class App extends Component {
     const { good, neutral, bad } = this.state;
     const totalFeedbacks = this.countTotalFeedback();
     const positivePercentage = this.countPositiveFeedbackPercentage();
+    const options = ['good', 'neutral', 'bad'];
 
     return (
       <>
         <Section title="Please leave feedback">
           <FeedbackOptions
-            onLeaveFeedback={[
-              { name: 'good', onClick: () => this.handleFeedback('good') },
-              {
-                name: 'neutral',
-                onClick: () => this.handleFeedback('neutral'),
-              },
-              { name: 'bad', onClick: () => this.handleFeedback('bad') },
-            ]}
+            options={options}
+            onLeaveFeedback={this.handleFeedback}
           />
         </Section>
 
